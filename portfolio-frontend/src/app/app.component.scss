@@ -1,0 +1,21 @@
+@import "src/styles";
+
+.project-container {
+  display: flex;
+}
+
+.project-left {
+  background-color: $default-white;
+  width: $left-side-size;
+  margin-left: $left-margin;
+  border-radius: $card-border-radius;
+  height: 100%;
+}
+.project-right {
+  margin-left: $left-margin;
+  width: $right-side-size;
+  border-radius: $card-border-radius;
+  background-color: $default-white;
+
+}
+

@@ -1,0 +1,3 @@
+<div *ngFor="let entry of projects">
+  <app-project-tile [project]="entry.project" [selected]="entry.selected" (click)="select(entry.project)"></app-project-tile>
+</div>

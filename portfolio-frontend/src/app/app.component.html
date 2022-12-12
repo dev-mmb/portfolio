@@ -1,0 +1,10 @@
+
+<div class="project-container">
+  <div class="project-left">
+    <app-project-selector (onSelect)="setData($event)"></app-project-selector>
+  </div>
+  <div class="project-right">
+    <app-project-show-case [data]="data"></app-project-show-case>
+  </div>
+</div>
+

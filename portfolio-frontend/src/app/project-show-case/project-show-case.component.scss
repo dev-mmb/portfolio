@@ -1,0 +1,22 @@
+@import "src/styles";
+
+.project-container {
+  margin: 20px;
+}
+
+.data-url {
+  text-decoration: none;
+  color: $default-black;
+  &:visited {
+    text-decoration: none;
+
+  }
+  &:hover {
+    text-decoration: none;
+    color: $default-dark-blue;
+  }
+  &:active {
+    text-decoration: none;
+
+  }
+}

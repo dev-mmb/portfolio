@@ -1,0 +1,74 @@
+@import "src/styles";
+
+.clickable {
+  &:hover {
+    cursor: pointer;
+    color: $default-black
+  }
+}
+
+$img-container-height: 200px;
+$default-open-close-duration: 2s;
+
+.img-container {
+  width: $left-side-size - 50px;
+}
+.img-container-height-max {
+  animation: grow $default-open-close-duration forwards;
+}
+.img-container-height-min {
+  animation: shrink $default-open-close-duration forwards;
+}
+
+.img-open {
+  animation: open $default-open-close-duration forwards;
+}
+.img-closed {
+  animation: close $default-open-close-duration forwards;
+}
+.img {
+  height: 200px;
+}
+
+
+@keyframes open {
+  from {
+    width: 0%;
+    height: 0%;
+    margin-left: 50%;
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+}
+
+@keyframes close {
+  from {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+  to {
+    width: 0%;
+    height: 0%;
+    margin-left: 50%;
+  }
+}
+@keyframes grow {
+  from {
+    height: 0;
+  }
+  to {
+    height: $img-container-height;
+  }
+}
+@keyframes shrink {
+  from {
+    height: $img-container-height;
+  }
+  to {
+    height: 0;
+  }
+}

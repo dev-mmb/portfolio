@@ -1,0 +1,6 @@
+<div class="text text-header" [ngClass]="{'clickable': !selected}">
+  {{getProjectName()}}
+  <div class="img-container" [ngClass]="{'img-container-height-max': selected, 'img-container-height-min': !selected}">
+    <img src="assets/test.png" class="img" alt="" [ngClass]="{'img-open': selected, 'img-closed': !selected}">
+  </div>
+</div>
